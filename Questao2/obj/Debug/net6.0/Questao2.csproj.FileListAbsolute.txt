@@ -1,0 +1,17 @@
+D:\PROJETOS\TESTES\Teste-Nivelamento-Desenvolvedor-CSharp-API  5 (2) (1) (1) 1\Questao2\bin\Debug\net6.0\Questao2.exe
+D:\PROJETOS\TESTES\Teste-Nivelamento-Desenvolvedor-CSharp-API  5 (2) (1) (1) 1\Questao2\bin\Debug\net6.0\Questao2.deps.json
+D:\PROJETOS\TESTES\Teste-Nivelamento-Desenvolvedor-CSharp-API  5 (2) (1) (1) 1\Questao2\bin\Debug\net6.0\Questao2.runtimeconfig.json
+D:\PROJETOS\TESTES\Teste-Nivelamento-Desenvolvedor-CSharp-API  5 (2) (1) (1) 1\Questao2\bin\Debug\net6.0\Questao2.dll
+D:\PROJETOS\TESTES\Teste-Nivelamento-Desenvolvedor-CSharp-API  5 (2) (1) (1) 1\Questao2\bin\Debug\net6.0\Questao2.pdb
+D:\PROJETOS\TESTES\Teste-Nivelamento-Desenvolvedor-CSharp-API  5 (2) (1) (1) 1\Questao2\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\PROJETOS\TESTES\Teste-Nivelamento-Desenvolvedor-CSharp-API  5 (2) (1) (1) 1\Questao2\obj\Debug\net6.0\Questao2.csproj.AssemblyReference.cache
+D:\PROJETOS\TESTES\Teste-Nivelamento-Desenvolvedor-CSharp-API  5 (2) (1) (1) 1\Questao2\obj\Debug\net6.0\Questao2.GeneratedMSBuildEditorConfig.editorconfig
+D:\PROJETOS\TESTES\Teste-Nivelamento-Desenvolvedor-CSharp-API  5 (2) (1) (1) 1\Questao2\obj\Debug\net6.0\Questao2.AssemblyInfoInputs.cache
+D:\PROJETOS\TESTES\Teste-Nivelamento-Desenvolvedor-CSharp-API  5 (2) (1) (1) 1\Questao2\obj\Debug\net6.0\Questao2.AssemblyInfo.cs
+D:\PROJETOS\TESTES\Teste-Nivelamento-Desenvolvedor-CSharp-API  5 (2) (1) (1) 1\Questao2\obj\Debug\net6.0\Questao2.csproj.CoreCompileInputs.cache
+D:\PROJETOS\TESTES\Teste-Nivelamento-Desenvolvedor-CSharp-API  5 (2) (1) (1) 1\Questao2\obj\Debug\net6.0\Questao2.csproj.Up2Date
+D:\PROJETOS\TESTES\Teste-Nivelamento-Desenvolvedor-CSharp-API  5 (2) (1) (1) 1\Questao2\obj\Debug\net6.0\Questao2.dll
+D:\PROJETOS\TESTES\Teste-Nivelamento-Desenvolvedor-CSharp-API  5 (2) (1) (1) 1\Questao2\obj\Debug\net6.0\refint\Questao2.dll
+D:\PROJETOS\TESTES\Teste-Nivelamento-Desenvolvedor-CSharp-API  5 (2) (1) (1) 1\Questao2\obj\Debug\net6.0\Questao2.pdb
+D:\PROJETOS\TESTES\Teste-Nivelamento-Desenvolvedor-CSharp-API  5 (2) (1) (1) 1\Questao2\obj\Debug\net6.0\Questao2.genruntimeconfig.cache
+D:\PROJETOS\TESTES\Teste-Nivelamento-Desenvolvedor-CSharp-API  5 (2) (1) (1) 1\Questao2\obj\Debug\net6.0\ref\Questao2.dll
