@@ -21,8 +21,15 @@ namespace Questao5.Infrastructure.Services.Controllers
             _movimentacaoRepository = movimentacaoRepository;
         }
 
+        ///// <summary>
+        ///// Adiciona uma movimentação a conta corrente.
+        ///// </summary>
+        ///// <param name="número">Referente ao número da conta corrente.</param>
+        ///// <returns>IActionResult</returns>
+        ///// <response code="200">Caso a recuperação do saldo seja feito com sucesso.</response>
         [HttpPost("Movimentar")]
-        public IActionResult Movimentar([FromBody] Movimento request)
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public IActionResult Movimentar([FromBody] MovimentoView request)
         {
             try
             {
@@ -47,9 +54,9 @@ namespace Questao5.Infrastructure.Services.Controllers
 
                 }
 
-                if (request.TipoMovimento != TipoMovimento.C && request.TipoMovimento != TipoMovimento.D)
+                if (request.TipoMovimento != "C" && request.TipoMovimento != "D")
                 {
-                    return BadRequest(new { mensagem = "Tipo de movimenta��o inv�lido.", tipo = "INVALID_TYPE" });
+                    return BadRequest(new { mensagem = "Tipo de movimenta��o inválido.", tipo = "INVALID_TYPE" });
 
                 }
 
@@ -60,7 +67,7 @@ namespace Questao5.Infrastructure.Services.Controllers
                 var movimentoId = _movimentacaoRepository.Criar(movimentacao);
 
                 // Retorna o ID da movimenta��o
-                return Ok(new { id = movimentoId });
+                return Ok(new { id = movimentacao.Id });
             }
 
             catch (Exception ex)
@@ -69,7 +76,14 @@ namespace Questao5.Infrastructure.Services.Controllers
             }
         }
 
+        ///// <summary>
+        ///// Recupera o saldo da conta corrente
+        ///// </summary>
+        ///// <param name="número">Referente ao número da conta corrente.</param>
+        ///// <returns>IActionResult</returns>
+        ///// <response code="200">Caso a recuperação do saldo seja feito com sucesso.</response>
         [HttpGet("Saldo/{numero}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public IActionResult Saldo(int numero)
         {
             try
@@ -95,7 +109,7 @@ namespace Questao5.Infrastructure.Services.Controllers
                 decimal saldo = _movimentacaoRepository.CalcularSaldo(numero);
 
                 // Retorna o saldo
-                return Ok(new { saldo = saldo });
+                return Ok(new { saldo });
             }
 
             catch (Exception ex)

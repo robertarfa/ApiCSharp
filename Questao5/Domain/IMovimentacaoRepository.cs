@@ -7,7 +7,7 @@ namespace Questao5.Domain.Interfaces
 {
     public interface IMovimentacaoRepository
     {
-        int Criar(Movimentacao movimentacao);
+        int Criar(Movimento movimentacao);
         decimal CalcularSaldo(int IdContaCorrente);
     }
 }

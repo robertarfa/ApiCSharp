@@ -20,9 +20,10 @@ namespace Questao5.Domain.Repository
 
             using (SqliteConnection connection = connect)
             {
-                string query = "INSERT INTO Movimento(IdContaCorrente, Valor, TipoMovimento, DataMovimento) VALUES (@contaCorrenteId, @valor, @tipoMovimento, @dataMovimento); SELECT SCOPE_IDENTITY()";
+                string query = "INSERT INTO Movimento(IdMovimento, IdContaCorrente, Valor, TipoMovimento, DataMovimento) VALUES (@idMovimento,@contaCorrenteId, @valor, @tipoMovimento, @dataMovimento);";
                 using (SqliteCommand command = new SqliteCommand(query, connection))
                 {
+                    command.Parameters.AddWithValue("@idMovimento", movimentacao.Id);
                     command.Parameters.AddWithValue("@contaCorrenteId", movimentacao.IdContaCorrente);
                     command.Parameters.AddWithValue("@valor", movimentacao.Valor);
                     command.Parameters.AddWithValue("@tipoMovimento", movimentacao.TipoMovimento);

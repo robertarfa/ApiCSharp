@@ -4,6 +4,6 @@ namespace Questao5.Domain.Interfaces
 {
     public interface IContaCorrenteRepository
     {
-        ContaCorrente ObterPorId(int contaCorrenteId);
+        ContaCorrente ObterPorNumero(int numero);
     }
 }
