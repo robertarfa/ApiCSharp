@@ -1,4 +1,5 @@
 using MediatR;
+using Questao5.Domain.Interfaces;
 using Questao5.Domain.Repository;
 using Questao5.Infrastructure.Database;
 using Questao5.Infrastructure.Sqlite;
@@ -25,8 +26,8 @@ builder.Services.AddSwaggerGen(c =>
 
 });
 
-builder.Services.AddTransient<ContaCorrenteRepository>();
-builder.Services.AddTransient<MovimentacaoRepository>();
+builder.Services.AddTransient<IContaCorrenteRepository, ContaCorrenteRepository>();
+builder.Services.AddTransient<IMovimentacaoRepository, MovimentacaoRepository>();
 
 
 var app = builder.Build();

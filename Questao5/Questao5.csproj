@@ -9,12 +9,20 @@
 
 	<ItemGroup>
 	  <Compile Remove="Domain\Interfaces\**" />
+	  <Compile Remove="Questao5.Test\**" />
 	  <Content Remove="Domain\Interfaces\**" />
+	  <Content Remove="Questao5.Test\**" />
 	  <EmbeddedResource Remove="Domain\Interfaces\**" />
+	  <EmbeddedResource Remove="Questao5.Test\**" />
 	  <None Remove="Domain\Interfaces\**" />
+	  <None Remove="Questao5.Test\**" />
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="NSubstitute.Analyzers.CSharp" Version="1.0.17">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
 		<PackageReference Include="Dapper" Version="2.0.35" />
 		<PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.6" />
@@ -23,7 +31,7 @@
 		<PackageReference Include="FluentAssertions" Version="6.7.0" />
 		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.0-preview-20220726-02" />
 		<PackageReference Include="Moq" Version="4.18.2" />
-		<PackageReference Include="NSubstitute" Version="4.4.0" />
+		<PackageReference Include="NSubstitute" Version="5.1.0" />
 		<PackageReference Include="Swashbuckle.AspNetCore.Newtonsoft" Version="6.8.1" />
 		<PackageReference Include="xunit" Version="2.4.2" />
 		<PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">

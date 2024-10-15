@@ -15,7 +15,8 @@
           "Microsoft.Data.Sqlite": "3.1.6",
           "Microsoft.NET.Test.Sdk": "17.4.0-preview-20220726-02",
           "Moq": "4.18.2",
-          "NSubstitute": "4.4.0",
+          "NSubstitute": "5.1.0",
+          "NSubstitute.Analyzers.CSharp": "1.0.17",
           "Swashbuckle.AspNetCore": "6.2.3",
           "Swashbuckle.AspNetCore.Newtonsoft": "6.8.1",
           "coverlet.collector": "3.1.2",
@@ -27,14 +28,14 @@
           "Questao5.dll": {}
         }
       },
-      "Castle.Core/5.1.0": {
+      "Castle.Core/5.1.1": {
         "dependencies": {
           "System.Diagnostics.EventLog": "6.0.0"
         },
         "runtime": {
           "lib/net6.0/Castle.Core.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.1.0.0"
+            "fileVersion": "5.1.1.0"
           }
         }
       },
@@ -418,7 +419,7 @@
       },
       "Moq/4.18.2": {
         "dependencies": {
-          "Castle.Core": "5.1.0"
+          "Castle.Core": "5.1.1"
         },
         "runtime": {
           "lib/net6.0/Moq.dll": {
@@ -494,17 +495,18 @@
           }
         }
       },
-      "NSubstitute/4.4.0": {
+      "NSubstitute/5.1.0": {
         "dependencies": {
-          "Castle.Core": "5.1.0"
+          "Castle.Core": "5.1.1"
         },
         "runtime": {
           "lib/net6.0/NSubstitute.dll": {
-            "assemblyVersion": "4.4.0.0",
-            "fileVersion": "4.4.0.0"
+            "assemblyVersion": "5.1.0.0",
+            "fileVersion": "5.1.0.0"
           }
         }
       },
+      "NSubstitute.Analyzers.CSharp/1.0.17": {},
       "NuGet.Frameworks/5.11.0": {
         "runtime": {
           "lib/netstandard2.0/NuGet.Frameworks.dll": {
@@ -1364,12 +1366,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Castle.Core/5.1.0": {
+    "Castle.Core/5.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-31UJpTHOiWq95CDOHazE3Ub/hE/PydNWsJMwnEVTqFFP4WhAugwpaVGxzOxKgNeSUUeqS2W6lxV+q7u1pAOfXg==",
-      "path": "castle.core/5.1.0",
-      "hashPath": "castle.core.5.1.0.nupkg.sha512"
+      "sha512": "sha512-rpYtIczkzGpf+EkZgDr9CClTdemhsrwA/W5hMoPjLkRFnXzH44zDLoovXeKtmxb1ykXK9aJVODSpiJml8CTw2g==",
+      "path": "castle.core/5.1.1",
+      "hashPath": "castle.core.5.1.1.nupkg.sha512"
     },
     "coverlet.collector/3.1.2": {
       "type": "package",
@@ -1553,12 +1555,19 @@
       "path": "newtonsoft.json.bson/1.0.2",
       "hashPath": "newtonsoft.json.bson.1.0.2.nupkg.sha512"
     },
-    "NSubstitute/4.4.0": {
+    "NSubstitute/5.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-aArWp0M9n/3IZHCNSb3QIHy0tkPLSft8l3KFeUa54GbznKiv0FE687TBfPhZbXf0/zGtc4EsHLEUqEEf0Bf4HQ==",
-      "path": "nsubstitute/4.4.0",
-      "hashPath": "nsubstitute.4.4.0.nupkg.sha512"
+      "sha512": "sha512-ZCqOP3Kpp2ea7QcLyjMU4wzE+0wmrMN35PQMsdPOHYc2IrvjmusG9hICOiqiOTPKN0gJon6wyCn6ZuGHdNs9hQ==",
+      "path": "nsubstitute/5.1.0",
+      "hashPath": "nsubstitute.5.1.0.nupkg.sha512"
+    },
+    "NSubstitute.Analyzers.CSharp/1.0.17": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Pwz0MD7CAM/G/fvJjM3ceOfI+S0IgjanHcK7evwyrW9qAWUG8fgiEXYfSX1/s3h2JUNDOw6ik0G8zp+RT61Y1g==",
+      "path": "nsubstitute.analyzers.csharp/1.0.17",
+      "hashPath": "nsubstitute.analyzers.csharp.1.0.17.nupkg.sha512"
     },
     "NuGet.Frameworks/5.11.0": {
       "type": "package",

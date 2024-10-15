@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Questao5.Domain.Entities;
+using Questao5.Domain.Interfaces;
 using Questao5.Domain.Repository;
 using Questao5.Infrastructure.Database;
 
@@ -8,13 +9,13 @@ namespace Questao5.Infrastructure.Services.Controllers
     public class ContaCorrenteController : ControllerBase
     {
 
-        private readonly ContaCorrenteRepository _contaCorrenteRepository;
-        private readonly MovimentacaoRepository _movimentacaoRepository;
+        private readonly IContaCorrenteRepository _contaCorrenteRepository;
+        private readonly IMovimentacaoRepository _movimentacaoRepository;
 
 
         public ContaCorrenteController(
-            ContaCorrenteRepository contaCorrenteRepository,
-            MovimentacaoRepository movimentacaoRepository
+            IContaCorrenteRepository contaCorrenteRepository,
+            IMovimentacaoRepository movimentacaoRepository
             )
         {
             _contaCorrenteRepository = contaCorrenteRepository;
@@ -56,7 +57,7 @@ namespace Questao5.Infrastructure.Services.Controllers
 
                 if (request.TipoMovimento != "C" && request.TipoMovimento != "D")
                 {
-                    return BadRequest(new { mensagem = "Tipo de movimenta��o inválido.", tipo = "INVALID_TYPE" });
+                    return BadRequest(new { mensagem = "Tipo de movimentação inválida, deve ser C=Crédito ou D=Débito.", tipo = "INVALID_TYPE" });
 
                 }
 
